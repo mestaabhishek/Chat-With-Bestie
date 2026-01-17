@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "747073834617",
+    "firebase_url": "https://chat-with-bestie-default-rtdb.firebaseio.com",
+    "project_id": "chat-with-bestie",
+    "storage_bucket": "chat-with-bestie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747073834617:android:8f8ab23fb338885d77cea8",
+        "android_client_info": {
+          "package_name": "com.example.chatwithbestie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "747073834617-c32sr4b4ne1d30os09uc8vmnkf7gb3j1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatwithbestie",
+            "certificate_hash": "d722c891b97ae35010b05424b833dc28e113ebcc"
+          }
+        },
+        {
+          "client_id": "747073834617-amiphr5c6p8cvh7g68hct117tcvl0nir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwkHrdwOZiG1yXFiqvJvcs77wLZ2jB6e4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "747073834617-amiphr5c6p8cvh7g68hct117tcvl0nir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

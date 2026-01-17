@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/clay"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/frndimage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="80dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/addimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="#0047AB"
+            app:layout_constraintEnd_toEndOf="@id/frndimage"
+            app:layout_constraintBottom_toBottomOf="@id/frndimage"
+            android:background="@drawable/ic_baseline_add_a_photo_24"
+            android:gravity="center" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/clay" >
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:layout_weight="10"
+            android:fontFamily="serif"
+            android:textColor="#0047AB"
+            android:text="Name"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/namebtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:layout_weight="1"
+            android:layout_alignEnd="@id/name2"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_baseline_create_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/clay">
+        <EditText
+            android:id="@+id/editname2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_weight="10"
+            android:fontFamily="serif"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:textColor="#0047AB"
+            android:hint="Enter Your Name"/>
+        <Button
+            android:id="@+id/donenamebtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:layout_weight="1"
+            android:layout_alignEnd="@id/editname2"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/ic_baseline_done_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l1"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#0047AB"
+            android:fontFamily="serif"
+            android:layout_marginTop="28dp"
+            android:text="Phone Number"
+            android:layout_weight="10"
+            android:padding="5dp"
+            android:textSize="28sp" />
+        <Button
+            android:id="@+id/phbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignEnd="@id/phonenum"
+            android:background="@drawable/ic_baseline_create_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/l1">
+        <EditText
+            android:id="@+id/editphonenum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="#0047AB"
+            android:layout_weight="10"
+            android:fontFamily="serif"
+            android:layout_marginTop="28dp"
+            android:hint="Enter Your Phone Number"
+            android:padding="5dp" />
+        <Button
+            android:id="@+id/donephbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignEnd="@id/editphonenum"
+            android:background="@drawable/ic_baseline_done_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/l2">
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="#0047AB"
+            android:layout_weight="10"
+            android:fontFamily="serif"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="28dp"
+            android:text="Status"
+            android:padding="5dp"
+            android:textSize="28sp" />
+        <Button
+            android:id="@+id/stbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignEnd="@id/status"
+            android:background="@drawable/ic_baseline_create_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l2">
+        <EditText
+            android:id="@+id/editstatus"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#0047AB"
+            android:fontFamily="serif"
+            android:layout_weight="10"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="28dp"
+            android:hint="Enter Your Status"
+            android:padding="5dp" />
+        <Button
+            android:id="@+id/donestbtn"
+            android:layout_width="40dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignEnd="@id/editstatus"
+            android:background="@drawable/ic_baseline_done_24" />
+    </LinearLayout>
+</RelativeLayout>
